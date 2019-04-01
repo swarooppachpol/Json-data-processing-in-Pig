@@ -1,0 +1,1 @@
+datanew = LOAD '/home/hadoopuser/JSONDATA.json'  USING JsonLoader('food:chararray, person:chararray, amount:int');

@@ -1,0 +1,15 @@
+data== id,name,address
+
+1.load data into relation using pigstorage:
+first_table = LOAD 'first_table.txt' 
+    USING PigStorage() 
+    AS (col1:chararray);
+
+
+2.write data to json file:
+
+STORE first_table 
+    INTO 'first_table.json' 
+    USING JsonStorage();
+
+

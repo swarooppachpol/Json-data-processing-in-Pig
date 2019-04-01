@@ -1,0 +1,4 @@
+third_table = LOAD 'nestedjsondata.json' 
+    USING JsonLoader('recipe:chararray, 
+                      ingredients: {(name:chararray)}, 
+                      inventor: (name:chararray, age:int)');

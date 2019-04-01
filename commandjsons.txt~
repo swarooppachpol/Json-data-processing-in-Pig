@@ -1,0 +1,2 @@
+datanew = LOAD 'JSONDATA.json' 
+    USING JsonLoader('food:chararray, person:chararray, amount:int');
